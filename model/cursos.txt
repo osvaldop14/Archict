@@ -1,0 +1,32 @@
+﻿[
+  {
+    "anio": 2015,
+    "semestre": "primero",
+    "codigo": 2277,
+    "nombre": "Diseño 1"
+  },
+  {
+    "anio": 2014,
+    "semestre": "sugundo",
+    "codigo": 2877,
+    "nombre": "Diseños Arquitecnicos"
+  },
+  {
+    "anio": 20015,
+    "semestre": "primero",
+    "codigo": 3155,
+    "nombre": "Infraestructura"
+  },
+  {
+    "anio": 2016,
+    "semestre": "segundo",
+    "codigo": 3581,
+    "nombre": "Diseño Ambiental"
+  },
+  {
+    "anio": 2016,
+    "semestre": "tercero",
+    "codigo": 3423,
+    "nombre": "Vias"
+  }
+]

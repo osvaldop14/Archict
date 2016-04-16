@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app='prePortal'>
+<head>
+	<title>Pre Portal</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<style type="text/css">
+
+		body{
+			background-image: url(../img/main.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.container{
+			margin-top: 1%;
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 jumbotron">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="col-md-12">
+							<img src="../img/user.jpg" class="img-responsive">
+					</div>
+					
+				</div>
+				<div class="col-md-3">
+					<p><b>Nombre:</b> Osvaldo Perez</p>
+					<p><b>Carrera:</b> Ing. Sistemas</p>
+					<p><b>Edad:</b> 23</p>
+					<p><b>Semestre:</b> IX</p>
+					<p><b>Correo:</b> Osval1414@hotmail.com</p>
+					
+
+				</div>
+				<div class="col-md-6" >
+					<label>Seleccione Año</label>
+					<select class="form-control">
+						<option>2015</option>
+						<option>2016</option>
+					</select>
+					<br>
+					<label>Seleccione Periodo</label>
+					<select class="form-control">
+						<option>Primer</option>
+						<option>Segundo</option>
+					</select>
+					<br>
+					<label>Seleccione Semestre</label>
+					<select class="form-control">
+						<option>Primero</option>
+						<option>Segundo</option>
+						<option>Tercero</option>
+						<option>Cuarto</option>
+						<option>Quinto</option>
+						<option>Sexto</option>
+						<option>Septimo</option>
+						<option>Octavo</option>
+						<option>Noveno</option>
+						<option>Decimo</option>
+
+					</select>
+
+					<br>
+					<button class="btn btn-danger btn-block" onclick="visible()"> Aplicar </button>
+					<a href=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row jumbotron" id="cursos" style="display:none;">
+		<div class="col-md-6">
+			<div class="col-md-12" ng-controller="ListarCursos">
+				<table class="table">
+					<tr>
+						<td><label>Cursos</label></td>
+						<td>
+							<select class="form-control">
+								<option ng-repeat="curso in cursos">{{curso.nombre}}</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-12">
+				<a href="portalestudiantes.html" class="btn btn-danger btn-block	">Ingresar</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="../js/angular.min.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+
+<script type="text/javascript">
+	function visible(){
+		$('#cursos').css('display','block');
+	}
+</script>
+
+</body>
+</html>
